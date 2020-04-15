@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myReverse">
+<meta charset="utf-8">
+<script src="angular.min.js"></script>
+<script src="clc.js"></script>
+<head>
+	<title>NameCalculator</title>
+</head>
+<body ng-controller="nameReverseController">
+	<div>
+		Your Name: 
+	<input type="text" ng-model="name" ng-keyup="display();">
+</div>
+<div>
+   Reverse name is : {{reverseName}}
+</div>
+</body>
+</html>
