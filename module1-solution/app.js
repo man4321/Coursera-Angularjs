@@ -1,8 +1,9 @@
 ( function(){
 	'use strict';
   angular.module("LunchCheck",[])
-  .controller('LunchCheckController', function($scope){
-  	
+  .controller('LunchCheckController',LunchCheckController);
+  	LunchCheckController.$inject=['$scope'];
+    function LunchCheckController($scope){
   	$scope.items="";
   	$scope.message="";
 
@@ -31,19 +32,9 @@
   			return "Too much!";
 		}
   	}
-    function alphanumeric(input){
-      
-     var code = input.charCode;
-     console.log(code)
-    if ((code > 47 && code < 58) || // numeric (0-9)
-        (code > 64 && code < 91) || // upper alpha (A-Z)
-        (code > 96 && code < 123)) { // lower alpha (a-z)
-      return true;
-    }
-  return false;
-    }
+    
   
-  });
+  };
   	
 
 })();
