@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="FiltersApp">
+<head>
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+	<title>Filters use</title>
+</head>
+<body ng-controller="filterController">
+	<input type="text" ng-model="name" ng-keyup="filters()">
+	<br>
+	
+		{{name}}
+	
+</body>
+</html>
